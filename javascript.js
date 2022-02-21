@@ -35,5 +35,25 @@ formulario.addEventListener('submit', (event) => {
          
    mostrarDatos();
 
+    const user = [{
+        "name": firstName,
+        "email": firstEmail,
+        "image": firstImage,
+        "text": firstText
+    }];
+
+    console.log("holaholahola");
+
+   
+    let user1 = localStorage.getItem("usuario");
+     console.log(user1);
+  /*  let allUsers = localStorage.setItem("usuario",JSON.stringify(user));
+
+    allUsers.push(user);
+        console.log(allUsers);
+*/
+
+
+
 })
  
