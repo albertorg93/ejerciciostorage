@@ -42,16 +42,15 @@ formulario.addEventListener('submit', (event) => {
         "text": firstText
     }];
 
-    console.log("holaholahola");
-
-   
-    let user1 = localStorage.getItem("usuario");
-     console.log(user1);
-  /*  let allUsers = localStorage.setItem("usuario",JSON.stringify(user));
-
-    allUsers.push(user);
-        console.log(allUsers);
-*/
+    localStorage.setItem(
+        "user4",
+        JSON.stringify({
+          username: "Alejandro",
+          api_key: "abc123xyz789",
+        })
+      );
+      //Leer
+      var user12 = JSON.parse(localStorage.getItem("user4"));
 
 
 
